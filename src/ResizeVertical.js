@@ -1,6 +1,10 @@
 import * as React from "react";
 
-class ResizeVertical extends React.Component {
+export default class ResizeVertical extends React.Component {
+    static get myName() {
+        return "ResizeVertical";
+    }
+
     render() {
         const id = this.props.id ? this.props.id : "";
         const className = this.props.className ? this.props.className : "";
@@ -36,7 +40,3 @@ class ResizeVertical extends React.Component {
         );
     }
 }
-
-ResizeVertical.myName = 'ResizeVertical';
-
-export default ResizeVertical;

@@ -1,6 +1,10 @@
 import * as React from "react";
 
-class ResizeHorizon extends React.Component {
+export default class ResizeHorizon extends React.Component {
+    static get myName() {
+        return "ResizeHorizon";
+    }
+
     render() {
         const id = this.props.id ? this.props.id : "";
         const className = this.props.className ? this.props.className : "";
@@ -37,7 +41,3 @@ class ResizeHorizon extends React.Component {
         );
     }
 }
-
-ResizeHorizon.myName = 'ResizeHorizon';
-
-export default ResizeHorizon;
