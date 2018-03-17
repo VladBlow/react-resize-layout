@@ -12,10 +12,10 @@ export default class ResizeHorizon extends React.Component {
         const minWidth = this.props.minWidth ? this.props.minWidth : "0";
         const overflow = this.props.overflow ? this.props.overflow : "hidden";
         const show =
-            this.props.show == false ||
-            this.props.show == "false" ||
-            this.props.show == "off" ||
-            this.props.show == "none"
+            this.props.show === false ||
+            this.props.show === "false" ||
+            this.props.show === "off" ||
+            this.props.show === "none"
                 ? "none"
                 : "block";
 

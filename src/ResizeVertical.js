@@ -12,10 +12,10 @@ export default class ResizeVertical extends React.Component {
         const minHeight = this.props.minHeight ? this.props.minHeight : "0";
         const overflow = this.props.overflow ? this.props.overflow : "hidden";
         const show =
-            this.props.show == false ||
-            this.props.show == "false" ||
-            this.props.show == "off" ||
-            this.props.show == "none"
+            this.props.show === false ||
+            this.props.show === "false" ||
+            this.props.show === "off" ||
+            this.props.show === "none"
                 ? "none"
                 : "block";
 
